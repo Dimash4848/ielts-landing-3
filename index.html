@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Band Academy: IELTS and TOEFL preparation with small groups, weekly mock tests and speaking practice.">
+  <title>Band Academy | IELTS &amp; TOEFL Exam Preparation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Theme switch: checkbox lives at the top so CSS can invert the whole page with :has() -->
+  <input type="checkbox" id="theme" class="visually-hidden" aria-label="Invert colour theme">
+
+  <header class="site-header">
+    <a class="brand" href="#top">Band Academy</a>
+
+    <!-- Burger menu without JavaScript: hidden checkbox + label -->
+    <input type="checkbox" id="menu" class="visually-hidden" aria-label="Open menu">
+    <label class="burger" for="menu"><span class="visually-hidden">Menu</span></label>
+
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a class="btn" href="#apply">Check Your Level</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Pass IELTS with 7.5+ on the First Attempt</h1>
+      <p>Small groups, a weekly full mock exam and a teacher who marks every Writing task by hand.</p>
+      <a class="btn" href="#apply">Take a Trial Test</a>
+    </section>
+
+    <section id="courses" aria-labelledby="courses-title">
+      <h2 id="courses-title">Four papers, four ways to prepare</h2>
+      <p class="lead">Each lesson block trains one paper of the exam. You always know which skill you are working on.</p>
+
+      <section class="cards cards-4" aria-label="Exam structure">
+        <article>
+          <h3>Listening</h3>
+          <p>Four recordings with note-taking drills. We train you to catch numbers, spellings and distractors.</p>
+        </article>
+        <article>
+          <h3>Reading</h3>
+          <p>Three long texts in 60 minutes. You learn skimming, scanning and a clear plan for each question type.</p>
+        </article>
+        <article>
+          <h3>Writing</h3>
+          <p>Task 1 and Task 2 with band-descriptor feedback, so you see exactly which criterion costs you points.</p>
+        </article>
+        <article>
+          <h3>Speaking</h3>
+          <p>Weekly mock interviews in pairs and with a teacher, recorded so you can hear your own progress.</p>
+        </article>
+      </section>
+    </section>
+
+    <section id="results" aria-labelledby="results-title">
+      <h2 id="results-title">What our graduates scored</h2>
+      <p class="lead">Sample figures for the layout. Replace them with the centre's real statistics.</p>
+
+      <section class="cards cards-3" aria-label="Graduate statistics">
+        <article>
+          <p class="stat">7.0+</p>
+          <p>of graduates reached Band 7 or higher in the last intake.</p>
+        </article>
+        <article>
+          <p class="stat">+1.5</p>
+          <p>average Band improvement between the trial test and the real exam.</p>
+        </article>
+        <article>
+          <p class="stat">120</p>
+          <p>students prepared for study abroad applications this year.</p>
+        </article>
+      </section>
+    </section>
+
+    <section id="apply" class="apply" aria-labelledby="apply-title">
+      <header>
+        <h2 id="apply-title">Find your level before you pay for anything</h2>
+        <p class="lead">Leave your contact. We will send you a free placement test and suggest a group.</p>
+      </header>
+
+      <form action="#" method="post">
+        <label for="name">Name
+          <input id="name" name="name" type="text" placeholder=" " autocomplete="name" minlength="2" required>
+          <small class="hint">Enter your name (at least 2 letters).</small>
+        </label>
+
+        <label for="contact">Telegram / WhatsApp number
+          <input id="contact" name="contact" type="tel" placeholder=" " autocomplete="tel" pattern="[+0-9 ()\-]{7,}" required>
+          <small class="hint">Use a phone number, for example +7 701 000 00 00.</small>
+        </label>
+
+        <label for="email">Email
+          <input id="email" name="email" type="email" placeholder=" " autocomplete="email" required>
+          <small class="hint">Enter a valid email address.</small>
+        </label>
+
+        <label for="level">Current English level (CEFR)
+          <select id="level" name="level" required>
+            <option value="" selected disabled>Choose your level</option>
+            <option value="A2">A2 Elementary</option>
+            <option value="B1">B1 Intermediate</option>
+            <option value="B2">B2 Upper-intermediate</option>
+            <option value="C1">C1 Advanced</option>
+          </select>
+          <small class="hint">Choose the level closest to yours.</small>
+        </label>
+
+        <button class="btn" type="submit">Send application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <section aria-labelledby="license-title">
+      <h2 id="license-title">Licence</h2>
+      <p>Band Academy operates under educational licence No. 00000 (replace with the centre's licence details).</p>
+    </section>
+
+    <nav aria-label="Official resources">
+      <h2>Official exam resources</h2>
+      <ul>
+        <li><a href="https://ielts.org" target="_blank" rel="noopener">IELTS official site</a></li>
+        <li><a href="https://www.ets.org/toefl" target="_blank" rel="noopener">TOEFL by ETS</a></li>
+        <li><a href="https://www.britishcouncil.org" target="_blank" rel="noopener">British Council</a></li>
+      </ul>
+    </nav>
+
+    <section aria-labelledby="legal-title">
+      <h2 id="legal-title">Legal</h2>
+      <p><small>&copy; 2026 Band Academy. IELTS and TOEFL are trademarks of their respective owners; this centre is not their official representative unless stated.</small></p>
+      <label class="btn theme-switch" for="theme">Invert theme</label>
+    </section>
+  </footer>
+</body>
+</html>
